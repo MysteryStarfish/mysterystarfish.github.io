@@ -5736,11 +5736,11 @@ blockquote.pullquote.right {
   --tab-botton-color: rgba(255,255,255,0.7);
   --tab-button-hover-bg: #383838;
   --tab-button-active-bg: #121212;
-  --card-bg: #121212;
-  --sidebar-bg: #121212;
+  --card-bg: #0d0b26;
+  --sidebar-bg: #120f40;
   --btn-hover-color: #787878;
   --btn-color: rgba(255,255,255,0.7);
-  --btn-bg: #1f1f1f;
+  --btn-bg: #441347;
   --text-bg-hover: #383838;
   --light-grey: rgba(255,255,255,0.7);
   --dark-grey: rgba(255,255,255,0.2);
