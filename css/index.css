@@ -5101,6 +5101,12 @@ blockquote.pullquote.right {
 .hide-block > .hide-content {
   display: none;
 }
+.hide-inline span {
+  visibility: hidden;
+}
+.hide-inline:hover span {
+  visibility: visible;
+}
 .hide-inline > .hide-button {
   margin: 0 6px;
 }
