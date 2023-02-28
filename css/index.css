@@ -5755,7 +5755,7 @@ blockquote.pullquote.right {
   --blockquote-color: rgba(255,255,255,0.7);
   --blockquote-bg: #2c2c2c;
   --reward-pop: #2c2c2c;
-  --toc-link-color: rgba(255,255,255,0.6);
+  --toc-link-color: rgba(0,0,0,0.6);
   --hl-color: rgba(255,255,255,0.7);
   --hl-bg: #171717;
   --hltools-bg: #1a1a1a;
