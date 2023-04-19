@@ -5818,7 +5818,7 @@ blockquote.pullquote.right {
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
 }
 [data-theme='dark'] #post-comment #comment-switch {
-  background: #2c2c2c !important;
+  background-color: #f5e7ae !important;
 }
 [data-theme='dark'] #post-comment #comment-switch .switch-btn {
   filter: brightness(0.8);
