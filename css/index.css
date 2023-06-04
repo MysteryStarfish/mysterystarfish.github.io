@@ -1432,7 +1432,7 @@ h6 code {
 hr {
   position: relative;
   margin: 40px auto;
-  border: 2px dashed var(--hr-border);
+  border: 1px solid var(--hr-border);
   width: calc(100% - 4px);
 }
 hr:hover:before {
