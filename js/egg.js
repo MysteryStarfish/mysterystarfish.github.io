@@ -4,7 +4,6 @@ var score_food = 0;
 var score_megumin = 0;
 var score_rocket = 0;
 
-
 function rickKey(){
     if (event.keyCode==72) {
         if (score_rick == 1 || score_rick == 3){
@@ -66,6 +65,8 @@ function kiritoKey(){
         }
 	} 
     if (score_kirito >= 5){
+        var audio = new Audio('/audio/brust.mp3');
+        audio.play();
         var audio = new Audio('/audio/kirito.mp3');
         audio.play();
         score_kirito = 0;
