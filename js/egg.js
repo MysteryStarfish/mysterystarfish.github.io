@@ -81,7 +81,7 @@ function foodKey(){
         else {
             score_food += 1;
         }
-	} else if (event.keyCode==56 && score_megumin == 1) {
+	} else if (event.keyCode==56 && score_food == 1) {
         if (score_food != 1){
             score_food = 0;
         }
@@ -102,7 +102,7 @@ function foodKey(){
         else {
             score_food += 1;
         }
-	} else if (event.keyCode==56 && score_megumin == 4) {
+	} else if (event.keyCode==56 && score_food == 4) {
         if (score_food != 4){
             score_food = 0;
         }
