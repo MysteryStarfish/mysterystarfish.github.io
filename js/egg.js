@@ -4,6 +4,7 @@ var score_food = 0;
 var score_megumin = 0;
 var score_rocket = 0;
 
+// hehe
 function rickKey(){
     if (event.keyCode==72) {
         if (score_rick == 1 || score_rick == 3){
@@ -27,6 +28,7 @@ function rickKey(){
     }
 }
 
+// c8763
 function kiritoKey(){
     if (event.keyCode==67) {
         if (score_kirito != 0){
@@ -74,6 +76,7 @@ function kiritoKey(){
     }
 }
 
+// 大麻
 function foodKey(){
     if (event.keyCode==50) {
         if (score_food != 0){
@@ -126,6 +129,7 @@ function foodKey(){
     }
 }
 
+// bakuretsu
 function meguminKey(){
     if (event.keyCode==66) {
         if (score_megumin != 0){
@@ -199,6 +203,7 @@ function meguminKey(){
     }
 }
 
+// rocket
 function rocketKey(){
     if (event.keyCode==82) {
         if (score_rocket != 0){
