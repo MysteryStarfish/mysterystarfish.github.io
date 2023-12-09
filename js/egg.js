@@ -4,21 +4,49 @@ var score_food = 0;
 var score_megumin = 0;
 var score_rocket = 0;
 
-// hehe
+// vip666
 function rickKey(){
-    if (event.keyCode==72) {
-        if (score_rick == 1 || score_rick == 3){
+    if (event.keyCode==86) {
+        if (score_rick != 0){
             score_rick = 0;
         }
         else {
             score_rick += 1;
         }
-	} else if (event.keyCode==69) {
-        if (score_rick == 1 || score_rick == 3){
-            score_rick += 1;
+	} else if (event.keyCode==73) {
+        if (score_rick != 1){
+            score_rick = 0;
         }
         else {
+            score_rick += 1;
+        }
+	} else if (event.keyCode==80) {
+        if (score_rick != 2){
             score_rick = 0;
+        }
+        else {
+            score_rick += 1;
+        }
+	} else if (event.keyCode==54) {
+        if (score_rick != 3){
+            score_rick = 0;
+        }
+        else {
+            score_rick += 1;
+        }
+	} else if (event.keyCode==54) {
+        if (score_rick != 4){
+            score_rick = 0;
+        }
+        else {
+            score_rick += 1;
+        }
+	} else if (event.keyCode==54) {
+        if (score_rick != 5){
+            score_rick = 0;
+        }
+        else {
+            score_rick += 1;
         }
 	} 
     if (score_rick >= 4){
