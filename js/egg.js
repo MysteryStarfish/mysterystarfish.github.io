@@ -49,7 +49,7 @@ function rickKey(){
             score_rick += 1;
         }
 	} 
-    if (score_rick >= 4){
+    if (score_rick >= 6){
         window.open("https://youtu.be/83oHyBpNd-4","rick", config='titlebar=0,scrollbars=0,status=0,menubar=0,toolbar=0');
         score_rick = 0;
         return false;
