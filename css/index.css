@@ -179,7 +179,7 @@ template {
   display: none
 }
 .limit-one-line,
-.card-list .card-item-desc,
+.card-item-desc,
 #article-container .flink .flink-item-name,
 #article-container .flink .flink-item-desc,
 #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a span,
@@ -2103,17 +2103,21 @@ figure.highlight pre .javascript .function {
 #article-container img {
   margin: 0 auto !important;
 }
+.card-item-desc {
+  font-size: 1.3em;
+  color: #fff;
+  position: relative;
+  top: 85px;
+}
 .card-list {
   overflow: auto;
 }
-.card-list .card-item-desc {
-  padding: 16px 10px 16px 0;
-  height: 50px;
-  font-size: 0.93em;
-}
 .card-list > a {
+  text-align: justify;
+  text-decoration: none !important;
   width: calc(25% - 15px);
   height: 130px;
+  line-height: 1.5;
   position: relative;
   display: block;
   margin: 15px 7px;
@@ -2242,6 +2246,9 @@ figure.highlight pre .javascript .function {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.flink-list-card {
+  text-decoration: none;
+}
 .card-list>a .info,
 .card-list>a .wrapper .cover {
   position: absolute;
@@ -2262,8 +2269,13 @@ figure.highlight pre .javascript .function {
 [data-theme=dark] .card-list a .info span {
   background-color: rgba(0,0,0,0.6);
 }
+[data-theme=dark] .card-list a .info img {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
 [data-theme=dark] .card-list > a:hover:before {
-  background-color: rgba(18,18,18,0.8);
+  background-color: rgba(18,18,18,0);
 }
 .justified-gallery > div > img,
 .justified-gallery > figure > img,
