@@ -28,21 +28,7 @@ function rickKey(){
             score_rick += 1;
         }
 	} else if (event.keyCode==54) {
-        if (score_rick != 3){
-            score_rick = 0;
-        }
-        else {
-            score_rick += 1;
-        }
-	} else if (event.keyCode==54) {
-        if (score_rick != 4){
-            score_rick = 0;
-        }
-        else {
-            score_rick += 1;
-        }
-	} else if (event.keyCode==54) {
-        if (score_rick != 5){
+        if (score_rick < 3 || score_rick > 6){
             score_rick = 0;
         }
         else {
