@@ -1,6 +1,7 @@
 https://mysterystarfish.github.io/challenge/blindtyping/blindtyping
-https://mysterystarfish.github.io/challenge/blindtyping/days/day12
+https://mysterystarfish.github.io/challenge/blindtyping/days/day13
 https://mysterystarfish.github.io/challenge/blindtyping/days/day11
+https://mysterystarfish.github.io/challenge/blindtyping/days/day12
 https://mysterystarfish.github.io/challenge/blindtyping/days/day10
 https://mysterystarfish.github.io/challenge/blindtyping/days/day9
 https://mysterystarfish.github.io/challenge/blindtyping/days/day8
@@ -55,9 +56,9 @@ https://mysterystarfish.github.io/tags/%E8%B2%93%E5%92%AA%E5%A4%A7%E6%88%B0%E7%8
 https://mysterystarfish.github.io/tags/%E5%9C%B0%E5%BA%95%E8%BF%B7%E5%AE%AE/
 https://mysterystarfish.github.io/tags/LCS/
 https://mysterystarfish.github.io/tags/Discord-Bot/
-https://mysterystarfish.github.io/tags/%E8%B3%87%E8%A8%8A%E4%B9%8B%E8%8A%BD/
-https://mysterystarfish.github.io/tags/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/
 https://mysterystarfish.github.io/tags/%E7%89%B9%E9%81%B8/
+https://mysterystarfish.github.io/tags/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/
+https://mysterystarfish.github.io/tags/%E8%B3%87%E8%A8%8A%E4%B9%8B%E8%8A%BD/
 https://mysterystarfish.github.io/categories/%E7%A8%8B%E5%BC%8F/
 https://mysterystarfish.github.io/categories/%E7%A8%8B%E5%BC%8F/Educational-DP-Contest/
 https://mysterystarfish.github.io/categories/%E9%81%8A%E6%88%B2/
