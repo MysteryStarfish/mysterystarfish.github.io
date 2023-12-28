@@ -1,10 +1,11 @@
-https://mysterystarfish.github.io/challenge/blindtyping/days/day19
-https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day0
-https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day2
-https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day1
 https://mysterystarfish.github.io/challenge/metroidvaniagame/metroidvaniagame
 https://mysterystarfish.github.io/challenge/blindtyping/blindtyping
 https://mysterystarfish.github.io/challenge/blindtyping/days/day20
+https://mysterystarfish.github.io/pose_hide/UnityEmptyObjectDetector
+https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day2
+https://mysterystarfish.github.io/challenge/blindtyping/days/day19
+https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day0
+https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day1
 https://mysterystarfish.github.io/challenge/blindtyping/days/day18
 https://mysterystarfish.github.io/challenge/
 https://mysterystarfish.github.io/challenge/blindtyping/days/day17
