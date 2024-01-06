@@ -1,8 +1,9 @@
-https://mysterystarfish.github.io/pose_hide/%E5%B8%AB%E5%A4%A7%E7%89%B9%E9%81%B8%E7%B5%90%E6%9E%9C
-https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day2
-https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day6
 https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day8
 https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day7
+https://mysterystarfish.github.io/pose_hide/day9
+https://mysterystarfish.github.io/2023/12/30/%E5%B8%AB%E5%A4%A7%E7%89%B9%E9%81%B8%E7%B5%90%E6%9E%9C/
+https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day2
+https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day6
 https://mysterystarfish.github.io/challenge/metroidvaniagame/metroidvaniagame
 https://mysterystarfish.github.io/challenge/blindtyping/blindtyping
 https://mysterystarfish.github.io/challenge/blindtyping/days/dayStop
