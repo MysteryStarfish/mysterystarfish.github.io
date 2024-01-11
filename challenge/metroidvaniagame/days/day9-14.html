@@ -1,16 +1,16 @@
-<!DOCTYPE html><html lang="zh-TW" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>遊戲製作挑戰Day1 | MysteryStarfish's blog</title><meta name="author" content="YU-LUN-HSU"><meta name="copyright" content="YU-LUN-HSU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="❀ 目標 ❀製作可控制移動的基本角色❀ 今日進度 ❀知識點：  學習使用 StateMachine 操作玩家 學習使用 Input System  Script：  新增了 StateMachine 基礎類  新增了 Idle 狀態  新增了 Run 狀態  新增了 PlayerInput 輸入設定  新增了 PlayerMovement 控制角色   ❀ 今日廢話 ❀應該要來學學 git 了 &amp;">
+<!DOCTYPE html><html lang="zh-TW" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>遊戲製作挑戰Day9-14 | MysteryStarfish's blog</title><meta name="author" content="YU-LUN-HSU"><meta name="copyright" content="YU-LUN-HSU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="❀ 目標 ❀攻擊系統❀ 本次進度 ❀知識點：OnGUI 函數直接在遊戲畫面顯示資訊 Script：  完成 Attack 系統(包括自訂 Hitbox、前搖後搖、combo) 武器類 微調移動參數(包括跳起落下速度，落下僵直，初動與煞車加速度) 預輸入系統(包括 Attack 與 Jump) 攻擊時無法轉向 敵人類 敵人 StateMachine 敵人追蹤  ❀ 本次廢話 ❀恩我來說明為啥我消失這">
 <meta property="og:type" content="website">
-<meta property="og:title" content="遊戲製作挑戰Day1">
-<meta property="og:url" content="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day1">
+<meta property="og:title" content="遊戲製作挑戰Day9-14">
+<meta property="og:url" content="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day9-14">
 <meta property="og:site_name" content="MysteryStarfish&#39;s blog">
-<meta property="og:description" content="❀ 目標 ❀製作可控制移動的基本角色❀ 今日進度 ❀知識點：  學習使用 StateMachine 操作玩家 學習使用 Input System  Script：  新增了 StateMachine 基礎類  新增了 Idle 狀態  新增了 Run 狀態  新增了 PlayerInput 輸入設定  新增了 PlayerMovement 控制角色   ❀ 今日廢話 ❀應該要來學學 git 了 &amp;">
+<meta property="og:description" content="❀ 目標 ❀攻擊系統❀ 本次進度 ❀知識點：OnGUI 函數直接在遊戲畫面顯示資訊 Script：  完成 Attack 系統(包括自訂 Hitbox、前搖後搖、combo) 武器類 微調移動參數(包括跳起落下速度，落下僵直，初動與煞車加速度) 預輸入系統(包括 Attack 與 Jump) 攻擊時無法轉向 敵人類 敵人 StateMachine 敵人追蹤  ❀ 本次廢話 ❀恩我來說明為啥我消失這">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://mysterystarfish.github.io/img/main/author.jpg">
-<meta property="article:published_time" content="2023-12-27T15:29:49.000Z">
-<meta property="article:modified_time" content="2023-12-27T15:29:34.855Z">
+<meta property="article:published_time" content="2024-01-11T07:54:49.000Z">
+<meta property="article:modified_time" content="2024-01-11T09:33:20.554Z">
 <meta property="article:author" content="YU-LUN-HSU">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mysterystarfish.github.io/img/main/author.jpg"><link rel="shortcut icon" href="/img/main/starfish.png"><link rel="canonical" href="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day1"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://mysterystarfish.github.io/img/main/author.jpg"><link rel="shortcut icon" href="/img/main/starfish.png"><link rel="canonical" href="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day9-14"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -51,12 +51,12 @@
     rightside: false,
   }
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '遊戲製作挑戰Day1',
+  title: '遊戲製作挑戰Day9-14',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-12-27 23:29:34'
+  postUpdate: '2024-01-11 17:33:20'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -170,25 +170,29 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/main/author.jpg" onerror="onerror=null;src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/challenge/MetroidvaniaGame/days/Day1.png')"><nav id="nav"><span id="blog-info"><a href="/" title="小秘密：輸入 vip666 就能在此網站擁有特殊權限"><span class="site-name">MysteryStarfish's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">遊戲製作挑戰Day1</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><h1 id="❀-目標-❀"><a href="#❀-目標-❀" class="headerlink" title="❀ 目標 ❀"></a>❀ 目標 ❀</h1><h2 id="製作可控制移動的基本角色"><a href="#製作可控制移動的基本角色" class="headerlink" title="製作可控制移動的基本角色"></a>製作可控制移動的基本角色</h2><h1 id="❀-今日進度-❀"><a href="#❀-今日進度-❀" class="headerlink" title="❀ 今日進度 ❀"></a>❀ 今日進度 ❀</h1><p>知識點：</p>
-<ol>
-<li>學習使用 StateMachine 操作玩家</li>
-<li>學習使用 Input System</li>
-</ol>
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/main/author.jpg" onerror="onerror=null;src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/main/mysterious.png')"><nav id="nav"><span id="blog-info"><a href="/" title="小秘密：輸入 vip666 就能在此網站擁有特殊權限"><span class="site-name">MysteryStarfish's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">遊戲製作挑戰Day9-14</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><h1 id="❀-目標-❀"><a href="#❀-目標-❀" class="headerlink" title="❀ 目標 ❀"></a>❀ 目標 ❀</h1><h2 id="攻擊系統"><a href="#攻擊系統" class="headerlink" title="攻擊系統"></a>攻擊系統</h2><h1 id="❀-本次進度-❀"><a href="#❀-本次進度-❀" class="headerlink" title="❀ 本次進度 ❀"></a>❀ 本次進度 ❀</h1><p>知識點：<br>OnGUI 函數直接在遊戲畫面顯示資訊</p>
 <p>Script：</p>
 <ul>
-<li><p>新增了 StateMachine 基礎類</p>
-</li>
-<li><p>新增了 Idle 狀態</p>
-</li>
-<li><p>新增了 Run 狀態</p>
-</li>
-<li><p>新增了 PlayerInput 輸入設定</p>
-</li>
-<li><p>新增了 PlayerMovement 控制角色</p>
-</li>
+<li>完成 Attack 系統(包括自訂 Hitbox、前搖後搖、combo)</li>
+<li>武器類</li>
+<li>微調移動參數(包括跳起落下速度，落下僵直，初動與煞車加速度)</li>
+<li>預輸入系統(包括 Attack 與 Jump)</li>
+<li>攻擊時無法轉向</li>
+<li>敵人類</li>
+<li>敵人 StateMachine</li>
+<li>敵人追蹤</li>
 </ul>
-<h1 id="❀-今日廢話-❀"><a href="#❀-今日廢話-❀" class="headerlink" title="❀ 今日廢話 ❀"></a>❀ 今日廢話 ❀</h1><p>應該要來學學 git 了 &#x3D;v&#x3D;</p>
+<h1 id="❀-本次廢話-❀"><a href="#❀-本次廢話-❀" class="headerlink" title="❀ 本次廢話 ❀"></a>❀ 本次廢話 ❀</h1><p>恩我來說明為啥我消失這麼久 <br>主要是 Day7 時的文字：「嘗試」新增 Attack 系統 <br>沒想到一嘗試就是嘗試了一周:( <br>簡單說明一下我想要的 Attack 系統</p>
+<ul>
+<li>要有自訂 Hitbox</li>
+<li>有前搖後搖</li>
+<li>有 combo 技<img class="inline-img" src="/img/challenge/metroidvaniagame/image_d9_1.png" style="height:250px"/>
+最終主要是以協成為核心。</li>
+</ul>
+<p>又因為最近吃了很多知識， <br>哪個要用抽象，哪個要用介面 <br>哪個要用 ScriptableObject，哪個要用 Monobehavier <br>諸如此類，太多選擇了，原來沒有一個參考是那麼的困難…。</p>
+<p>現在我也不敢說我找到最好的方法， <br>只是目前的我很滿意，也跑得懂，更看得懂(可能只有我) <br>現在跑起來真的很感動。</p>
+<p>對，然後還順便一口氣做了很多事，ㄏㄏ</p>
+<p>我覺得這樣的模式比較舒服，我開發了什麼再更新 <br>不然總覺得自己一事無成(°￢。) <br>所以這邊可能會變成單純紀錄，而非每日更新啦 <br>(看看我之後的想法)</p>
 </div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div><div id="comment-switch"><span class="first-comment">Facebook Comments</span><span class="switch-btn"></span><span class="second-comment"> Twikoo</span></div></div><div class="comment-wrap"><div><div class="fb-comments" data-colorscheme="dark" data-numposts="10" data-order-by="social" data-width="100%"></div></div><div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/main/author.jpg" onerror="this.onerror=null;this.src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="author-info__name">YU-LUN-HSU</div><div class="author-info__description">這就是描述有燒雞之腦的熱血少年— <br/>
 神秘海星 <br/>
 在海裡締造的偉大抒情史詩
@@ -205,7 +209,7 @@ if (false) {
   const themeNow = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
   const $fbComment = document.getElementsByClassName('fb-comments')[0]
   $fbComment.setAttribute('data-colorscheme',themeNow)
-  $fbComment.setAttribute('data-href', 'https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day1')
+  $fbComment.setAttribute('data-href', 'https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day9-14')
 
   if (typeof FB === 'object') {
     FB.XFBML.parse(document.getElementsByClassName('post-meta-commentcount')[0])
