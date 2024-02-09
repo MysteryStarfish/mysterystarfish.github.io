@@ -1,16 +1,16 @@
-<!DOCTYPE html><html lang="zh-TW" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>9/7讀書心得 | MysteryStarfish's blog</title><meta name="author" content="YU-LUN-HSU"><meta name="copyright" content="YU-LUN-HSU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="❀ 前言 ❀說實話偷讀了一段時間，並利用 Notion 做了一些規劃 \  但我的節奏從開學後有些被打亂。 9&#x2F;5、9&#x2F;6 剛剛模考完，有如當頭棒喝令我大夢初醒。 我一直以為物理很穩（自己寫題目都錯歷史題） 但現場自以為懂題目的條件而錯爆，向隅的我總算看清自己的真面目。 英文更是錯的一遢塗地，雖然滿盡力的。 總之今天突然振作，想奮發圖強因而興起寫了這篇。 ❀ 一些想法 ❀說實話">
+<!DOCTYPE html><html lang="zh-TW" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>遊戲製作挑戰Day15-16 | MysteryStarfish's blog</title><meta name="author" content="YU-LUN-HSU"><meta name="copyright" content="YU-LUN-HSU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="❀ 目標 ❀攻擊系統❀ 本次進度 ❀Script：  實現了敵人的技能(衝刺攻擊)  ❀ 本次廢話 ❀廢話不多說，上 demo 連結點我">
 <meta property="og:type" content="website">
-<meta property="og:title" content="9&#x2F;7讀書心得">
-<meta property="og:url" content="https://mysterystarfish.github.io/pose_hide/9-7%E8%AE%80%E6%9B%B8%E5%BF%83%E5%BE%97">
+<meta property="og:title" content="遊戲製作挑戰Day15-16">
+<meta property="og:url" content="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day15-16">
 <meta property="og:site_name" content="MysteryStarfish&#39;s blog">
-<meta property="og:description" content="❀ 前言 ❀說實話偷讀了一段時間，並利用 Notion 做了一些規劃 \  但我的節奏從開學後有些被打亂。 9&#x2F;5、9&#x2F;6 剛剛模考完，有如當頭棒喝令我大夢初醒。 我一直以為物理很穩（自己寫題目都錯歷史題） 但現場自以為懂題目的條件而錯爆，向隅的我總算看清自己的真面目。 英文更是錯的一遢塗地，雖然滿盡力的。 總之今天突然振作，想奮發圖強因而興起寫了這篇。 ❀ 一些想法 ❀說實話">
+<meta property="og:description" content="❀ 目標 ❀攻擊系統❀ 本次進度 ❀Script：  實現了敵人的技能(衝刺攻擊)  ❀ 本次廢話 ❀廢話不多說，上 demo 連結點我">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://mysterystarfish.github.io/img/main/author.jpg">
-<meta property="article:published_time" content="2023-09-07T16:05:14.000Z">
-<meta property="article:modified_time" content="2023-09-07T16:34:46.463Z">
+<meta property="article:published_time" content="2024-01-13T04:19:55.000Z">
+<meta property="article:modified_time" content="2024-01-13T04:21:13.821Z">
 <meta property="article:author" content="YU-LUN-HSU">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mysterystarfish.github.io/img/main/author.jpg"><link rel="shortcut icon" href="/img/main/starfish.png"><link rel="canonical" href="https://mysterystarfish.github.io/pose_hide/9-7%E8%AE%80%E6%9B%B8%E5%BF%83%E5%BE%97"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://mysterystarfish.github.io/img/main/author.jpg"><link rel="shortcut icon" href="/img/main/starfish.png"><link rel="canonical" href="https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day15-16"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -51,12 +51,12 @@
     rightside: false,
   }
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '9/7讀書心得',
+  title: '遊戲製作挑戰Day15-16',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-09-08 00:34:46'
+  postUpdate: '2024-01-13 12:21:13'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -170,36 +170,11 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/main/author.jpg" onerror="onerror=null;src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/main/mysterious.png')"><nav id="nav"><span id="blog-info"><a href="/" title="小秘密：輸入 vip666 就能在此網站擁有特殊權限"><span class="site-name">MysteryStarfish's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">9/7讀書心得</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><h1 id="❀-前言-❀"><a href="#❀-前言-❀" class="headerlink" title="❀ 前言 ❀"></a>❀ 前言 ❀</h1><p>說實話偷讀了一段時間，並利用 Notion 做了一些規劃 \</p>
-<img class="inline-img" src="/img/post/studying/summer.png" style="height:150px"/>
-<p>但我的節奏從開學後有些被打亂。 <br>9&#x2F;5、9&#x2F;6 剛剛模考完，有如當頭棒喝令我大夢初醒。 <br>我一直以為物理很穩（自己寫題目都錯歷史題） <br>但現場自以為懂題目的條件而錯爆，向隅的我總算看清自己的真面目。 <br>英文更是錯的一遢塗地，雖然滿盡力的。 <br>總之今天突然振作，想奮發圖強因而興起寫了這篇。</p>
-<h1 id="❀-一些想法-❀"><a href="#❀-一些想法-❀" class="headerlink" title="❀ 一些想法 ❀"></a>❀ 一些想法 ❀</h1><p>說實話開學後的自己有點混，從今天開始我要每天決定好隔天要讀什麼。 <br>也不可以再沉迷於手機了（這方面還可以，希望不要花太多時間於youtube） \</p>
-<h2 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h2><ul>
-<li>課外<ol>
-<li>youtube 不看超過 20 min (除去課內)。</li>
-</ol>
-</li>
-<li>課內<ol>
-<li>認真訂正英文，花時間複習單字。</li>
-<li>開始抄佳句與片語，尤其是雜誌很重要。</li>
-<li>各科歷屆每周一回。</li>
-</ol>
-</li>
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/main/author.jpg" onerror="onerror=null;src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/main/mysterious.png')"><nav id="nav"><span id="blog-info"><a href="/" title="小秘密：輸入 vip666 就能在此網站擁有特殊權限"><span class="site-name">MysteryStarfish's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/challenge/"><i class="fa-fw fas fa-trophy"></i><span> Challenge</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Class</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/whisper/"><i class="fa-fw fas fa-mug-hot"></i><span> Story</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/history/"><i class="fa-fw fas fa-book"></i><span> History</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">遊戲製作挑戰Day15-16</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><h1 id="❀-目標-❀"><a href="#❀-目標-❀" class="headerlink" title="❀ 目標 ❀"></a>❀ 目標 ❀</h1><h2 id="攻擊系統"><a href="#攻擊系統" class="headerlink" title="攻擊系統"></a>攻擊系統</h2><h1 id="❀-本次進度-❀"><a href="#❀-本次進度-❀" class="headerlink" title="❀ 本次進度 ❀"></a>❀ 本次進度 ❀</h1><p>Script：</p>
+<ul>
+<li>實現了敵人的技能(衝刺攻擊)</li>
 </ul>
-<h2 id="英文展望"><a href="#英文展望" class="headerlink" title="英文展望"></a>英文展望</h2><p>英文分數大於 60</p>
-<ol>
-<li>一分題可錯 8 題</li>
-<li>二分題可錯 5 題</li>
-<li>混和題可錯 4 分</li>
-<li>作文手寫 <strong>10分</strong> 以上</li>
-</ol>
-<h2 id="英文理想"><a href="#英文理想" class="headerlink" title="英文理想"></a>英文理想</h2><p>英文分數大於 70</p>
-<ol>
-<li>一分題可錯 5 題</li>
-<li>二分題可錯 3 題</li>
-<li>混和題可錯 4 分</li>
-<li>作文手寫 <strong>10分</strong> 以上</li>
-</ol>
+<h1 id="❀-本次廢話-❀"><a href="#❀-本次廢話-❀" class="headerlink" title="❀ 本次廢話 ❀"></a>❀ 本次廢話 ❀</h1><p>廢話不多說，上 demo 連結<br><a target="_blank" rel="noopener" href="https://youtu.be/n_OIJxf1x-k">點我</a></p>
 </div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div><div id="comment-switch"><span class="first-comment">Facebook Comments</span><span class="switch-btn"></span><span class="second-comment"> Twikoo</span></div></div><div class="comment-wrap"><div><div class="fb-comments" data-colorscheme="dark" data-numposts="10" data-order-by="social" data-width="100%"></div></div><div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/main/author.jpg" onerror="this.onerror=null;this.src='/img/main/mumei_404.gif'" alt="avatar"/></div><div class="author-info__name">YU-LUN-HSU</div><div class="author-info__description">這就是描述有燒雞之腦的熱血少年— <br/>
 神秘海星 <br/>
 在海裡締造的偉大抒情史詩
@@ -216,7 +191,7 @@ if (false) {
   const themeNow = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
   const $fbComment = document.getElementsByClassName('fb-comments')[0]
   $fbComment.setAttribute('data-colorscheme',themeNow)
-  $fbComment.setAttribute('data-href', 'https://mysterystarfish.github.io/pose_hide/9-7%E8%AE%80%E6%9B%B8%E5%BF%83%E5%BE%97')
+  $fbComment.setAttribute('data-href', 'https://mysterystarfish.github.io/challenge/metroidvaniagame/days/day15-16')
 
   if (typeof FB === 'object') {
     FB.XFBML.parse(document.getElementsByClassName('post-meta-commentcount')[0])
